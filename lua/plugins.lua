@@ -284,7 +284,7 @@ packer.startup(function(use)
     end,
   })
 
-  use({
+  -- use({
 
   -- NOTE: use https://github.com/Akianonymus/nvim-colorizer.lua ?
   -- NOTE: use https://github.com/NvChad/nvim-colorizer.lua ?
