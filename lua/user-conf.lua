@@ -1,7 +1,9 @@
 local M = {}
 
--- theme: catppuccino or nightfox; default is catppuccino
-M.theme = "catppuccino"
+-- theme: catppuccino, nightfox or dracula; default is dracula
+M.theme = "dracula"
+-- make background transparent
+M.transparent = true
 -- Toggle global status line
 M.global_statusline = true
 -- use rg instead of grep
@@ -17,7 +19,7 @@ M.showtabline = 1
 -- enable or disable listchars
 M.list = false
 -- which list chars to schow
-M.listchars = "eol:¬,tab:>·,trail:~,extends:>,precedes:<"
+M.listchars = "tab:> ,trail:~,extends:>,precedes:<"
 -- enable PackerSync on plugins.lua save
 M.packer_auto_sync = true
 -- set cmdheight

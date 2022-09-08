@@ -147,7 +147,12 @@ packer.startup(function(use)
 
   use({ "neovim/nvim-lspconfig", config = get_config("lsp") })
 
-  use({ "onsails/lspkind-nvim" })
+  use({ "onsails/lspkind.nvim", requires = { "famiu/bufdelete.nvim" } })
+
+  use({
+    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+    config = get_config("lsp-lines"),
+  })
 
   use({
     "jose-elias-alvarez/null-ls.nvim",
@@ -194,8 +199,14 @@ packer.startup(function(use)
     use({ "EdenEast/nightfox.nvim", config = get_config("nightfox") })
   elseif settings.theme == "catppuccino" then
     use({ "catppuccin/nvim", as = "catppuccin", config = get_config("catppuccin") })
+  elseif settings.theme == "dracula" then
+    use({ "Mofiqul/dracula.nvim", as = "dracula", config = get_config("dracula") })
   else
     use({ "catppuccin/nvim", as = "catppuccin", config = get_config("catppuccin") })
+  end
+
+  if settings.transparent then
+    use({ "xiyaowong/nvim-transparent", config = get_config("transparent") })
   end
 
   use({ "tweekmonster/startuptime.vim" })
@@ -296,6 +307,8 @@ packer.startup(function(use)
     end,
     disable = settings.disable_colorizer,
   })
+
+  use({ "editorconfig/editorconfig-vim" })
 end)
 
 -- TODO: ????
