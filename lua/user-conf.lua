@@ -1,6 +1,6 @@
 local M = {}
 
--- theme: catppuccino, nightfox or dracula; default is dracula
+-- theme: catppuccino, nightfox, dracula or tundra; default is dracula
 M.theme = "dracula"
 -- make background transparent
 M.transparent = true
