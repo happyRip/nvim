@@ -260,7 +260,7 @@ packer.startup(function(use)
     end,
   })
 
-  use({ "vimpostor/vim-tpipeline", disable = settings.disable_tmux_statusline_integration })
+  use({ "vimpostor/vim-tpipeline" })
 
   use({
     "anuvyklack/hydra.nvim",
