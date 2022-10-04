@@ -313,6 +313,8 @@ packer.startup(function(use)
     disable = settings.disable_colorizer,
   })
 
+  use({ "editorconfig/editorconfig-vim" })
+
   use({
     "anuvyklack/windows.nvim",
     requires = {
