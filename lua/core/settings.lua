@@ -2,7 +2,9 @@ local M = {}
 
 -- theme: nightfox, tokyonight, tundra, kanagawa, oxocarbon; default is catppuccin
 -- refer to the themes settings file for different styles
-M.theme = "tokyonight"
+M.theme = "dracula"
+-- Toggle background transparency
+M.transparent = true
 -- Toggle global status line
 M.global_statusline = true
 -- use rg instead of grep
