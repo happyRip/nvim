@@ -37,6 +37,13 @@ elseif settings.theme == "oxocarbon" then
       vim.cmd("colorscheme oxocarbon")
     end,
   }
+elseif settings.theme == "dracula" then
+  return {
+    "Mofiqul/dracula.nvim",
+    config = function()
+      vim.cmd("colorscheme dracula")
+    end,
+  }
 else
   return {
     "catppuccin/nvim",
